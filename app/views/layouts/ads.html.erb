@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Anuncios: <%= controller.action_name %></title>
+  <%= stylesheet_link_tag :all %>
+  <%= javascript_include_tag :defaults %>
+  <%= csrf_meta_tag %>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div>
+				<h1>Mebay</h1>
+				<ul id="nav">
+					<li><a href="/ads/">All Ads</a></li>
+				</ul>
+			</div>
+		</div>
+		<div id="content">
+			<%= yield %>
+		</div>
+		<div id="clearfooter"></div>
+	</div>
+	<div id="footer"></div>
+</body>
+</html>
