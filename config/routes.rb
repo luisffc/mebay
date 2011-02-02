@@ -1,5 +1,6 @@
 Mebay::Application.routes.draw do |map|
 
+  map.connect '/ads/', :controller => 'ads', :action => 'index'
   map.connect '/ads/:id', :controller => 'ads', :action => 'show'
 
   # The priority is based upon order of creation:
