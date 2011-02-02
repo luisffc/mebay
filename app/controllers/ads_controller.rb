@@ -5,7 +5,7 @@ class AdsController < ApplicationController
   end
 
   def index
-    @ads = Ad.find(:all)
+    @ads = Ad.all
   end
 
 end
